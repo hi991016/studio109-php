@@ -96,6 +96,32 @@
     add_action('init', function() {
         // remove_post_type_support('news', 'editor');
     }, 99);
+    
+    // ========= custom title page =========
+    function get_custom_page_title() {
+        if (is_front_page() || is_home()) {
+            return 'IMAGE STUDIO 109 TOP';
+        }
+
+        if (is_singular('news')) {
+            return get_the_title() . ' ｜ NEWS ｜ IMAGE STUDIO 109';
+        }
+
+        if (is_page()) {
+            $page_id = get_the_ID();
+            $page_title = strtoupper(get_the_title($page_id));
+            $parent_id = wp_get_post_parent_id($page_id);
+
+            if ($parent_id) {
+                $parent_title = strtoupper(get_the_title($parent_id));
+                return "$page_title ｜ $parent_title ｜ IMAGE STUDIO 109";
+            } else {
+                return "$page_title ｜ IMAGE STUDIO 109";
+            }
+        }
+        // fallback cho archive, taxonomy, search, 404, etc.
+        return wp_title('', false) . ' ｜ IMAGE STUDIO 109';
+    }
 
     // =========
     add_action('wp_head', function() {

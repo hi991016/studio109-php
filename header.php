@@ -44,24 +44,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
 
-    <?php   
-        if (is_home() || is_front_page()) {
-            echo '<title>IMAGE STUDIO 109</title>';
-        } elseif (is_page()) {
-            $page_id = get_the_ID();
-            $page_title = strtoupper(get_the_title($page_id));
-            $parent_id = wp_get_post_parent_id($page_id);
-            
-            if ($parent_id) {
-                $parent_title = strtoupper(get_the_title($parent_id)); 
-                echo "<title>$page_title ｜ $parent_title ｜ IMAGE STUDIO 109</title>";
-            } else {
-                echo "<title>$page_title ｜ IMAGE STUDIO 109</title>";
-            }
-        } else {
-            echo '<title>' . wp_title('', false) . ' ｜ IMAGE STUDIO 109</title>';
-        }
-    ?>
+    <title><?php echo get_custom_page_title(); ?></title>
 
     <?php wp_head(); ?>
 </head>
