@@ -88,7 +88,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="c-footer_right pc-only">
+                <div class="c-footer_right">
                     <div class="c-footer_items">
                         <div class="c-footer_items_group">
                             <h3>Our Service</h3>
@@ -139,6 +139,64 @@
                             <ul>
                                 <li><a href="<?= home_url(); ?>">お知らせ</a></li>
                             </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-footer_tablet">
+                    <div class="c-footer_tablet_l">
+                        <div class="c-footer_items">
+                            <div class="c-footer_items_group">
+                                <h3>Our Service</h3>
+                                <ul>
+                                    <li><a href="<?= home_url(); ?>">撮影スタジオ</a></li>
+                                    <li><a href="<?= home_url(); ?>">ポストプロダクション</a></li>
+                                    <li><a href="<?= home_url(); ?>">撮影特機サービス</a></li>
+                                    <li><a href="<?= home_url(); ?>">オンライン送稿サービス</a></li>
+                                    <li><a href="<?= home_url(); ?>">ロケーションサポート</a></li>
+                                    <li><a href="<?= home_url(); ?>">TVCM字幕制作・データ変換</a></li>
+                                    <li><a href="<?= home_url(); ?>">ライブ配信サポート</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-footer_tablet_r">
+                        <div class="c-footer_tablet_i">
+                            <div class="c-footer_items_group">
+                                <h3>Download</h3>
+                                <ul>
+                                    <li><a href="<?= home_url(); ?>">スタジオ図面・機材発注書（PDF）</a></li>
+                                    <li><a href="<?= home_url(); ?>">アクセスマップ（PDF）</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="c-footer_tablet_i">
+                            <div class="c-footer_items_group">
+                                <h3>Company</h3>
+                                <ul>
+                                    <li><a href="<?= home_url(); ?>">会社概要</a></li>
+                                    <li><a href="<?= home_url(); ?>">環境方針</a></li>
+                                </ul>
+                            </div>
+                            <div class="c-footer_items_group">
+                                <h3>News</h3>
+                                <ul>
+                                    <li><a href="<?= home_url(); ?>">お知らせ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="c-footer_tablet_i">
+                            <div class="c-footer_items_group">
+                                <h3>Contact</h3>
+                                <ul>
+                                    <li><a href="<?= home_url(); ?>">お問い合わせ</a></li>
+                                </ul>
+                            </div>
+                            <div class="c-footer_items_group">
+                                <h3>Recruit</h3>
+                                <ul>
+                                    <li><a href="<?= home_url(); ?>">採用情報</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -250,7 +250,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="services_navigation pc-only">
+                    <div class="services_navigation">
                         <div class="swiper-button-prev"></div>
                         <div class="swiper-button-next"></div>
                     </div>

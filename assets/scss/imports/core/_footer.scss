@@ -46,7 +46,7 @@
         }
 
         p {
-          font-size: 1.6rem;
+          font-size: min(1.171vw, 1.6rem);
           font-weight: 400;
 
           span {
@@ -84,7 +84,7 @@
           }
 
           p {
-            font-size: 1.2rem;
+            font-size: min(2.899vw, 1.2rem);
           }
         }
       }
@@ -94,10 +94,14 @@
   &_mega {
     margin-top: 23px;
     display: grid;
-    grid-template-columns: 45% 1fr;
-    gap: 10px;
+    grid-template-columns: 48% 1fr;
 
-    @include maxW(1023px) {
+    @include maxW {
+      margin-top: 40px;
+    }
+
+    @include maxW(767px) {
+      margin-top: 0;
       display: block;
     }
   }
@@ -107,6 +111,37 @@
     grid-template-columns: repeat(4, max-content);
     justify-content: space-between;
     gap: 10px;
+
+    @include maxW() {
+      display: none;
+    }
+  }
+
+  &_tablet {
+    display: none;
+
+    @include maxW() {
+      display: flex;
+      justify-content: space-between;
+
+      &_i {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+
+        .c-footer_items_group {
+          margin-top: 0 !important;
+        }
+
+        &:first-child {
+          margin-top: initial;
+        }
+      }
+    }
+
+    @include maxW(767px) {
+      display: none !important;
+    }
   }
 
   &_items {
@@ -171,6 +206,12 @@
       margin-top: 30px;
 
       &:first-child {
+        margin-top: initial;
+      }
+    }
+
+    @include maxW(767px) {
+      &:first-child {
         margin-top: 40px;
       }
     }
@@ -178,9 +219,10 @@
 
   &_map {
     margin-top: 15px;
+    width: 315px;
     display: flex;
     align-items: flex-start;
-    gap: 20px;
+    justify-content: space-between;
     font-size: 1.2rem;
     line-height: 1.5;
 
@@ -195,6 +237,10 @@
       a {
         font-size: 1rem;
       }
+    }
+
+    @include maxW(767px) {
+      width: 100%;
     }
   }
 
@@ -230,7 +276,7 @@
       margin-top: 40px;
       padding-top: 40px;
 
-      align-items: flex-start;
+      align-items: flex-end;
       justify-content: flex-start;
       flex-direction: column-reverse;
       gap: 50px;
@@ -238,6 +284,10 @@
       &_group {
         gap: 5px;
       }
+    }
+
+    @include maxW(767px) {
+      align-items: flex-start;
     }
   }
 }
