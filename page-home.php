@@ -50,8 +50,10 @@
         <section class="services">
             <div class="services_container u-container">
                 <div class="services_heading c-heading" data-texttop>
-                    <h2>Our Service</h2>
-                    <p><span>/</span>事業内容</p>
+                    <div class="wrap">
+                        <h2>Our Service</h2>
+                        <p><span>/</span>事業内容</p>
+                    </div>
                 </div>
                 <div class="services_swiper" data-services-swiper>
                     <div class="swiper-wrapper">
@@ -263,8 +265,10 @@
         <section class="access">
             <div class="access_container u-container">
                 <div class="c-heading" data-texttop>
-                    <h2>Access</h2>
-                    <p><span>/</span>アクセス</p>
+                    <div class="wrap">
+                        <h2>Access</h2>
+                        <p><span>/</span>アクセス</p>
+                    </div>
                 </div>
                 <div class="access_list">
                     <div class="access_items" data-fadein>
@@ -355,8 +359,10 @@
             <div class="news_container u-container">
                 <div class="news_wrapper">
                     <div class="c-heading" data-texttop>
-                        <h2>News</h2>
-                        <p><span>/</span>お知らせ</p>
+                        <div class="wrap">
+                            <h2>News</h2>
+                            <p><span>/</span>お知らせ</p>
+                        </div>
                     </div>
                     <div class="c-news">
                         <div class="c-news_list">
