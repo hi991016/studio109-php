@@ -282,3 +282,5 @@
         }
     }
     add_action('init', 'check_taxonomy_rewrite');
+
+    add_filter('show_admin_bar', '__return_false');
