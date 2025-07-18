@@ -276,14 +276,17 @@
     @include maxW {
       margin-top: 40px;
       padding-top: 40px;
-      align-items: flex-start;
-      justify-content: flex-start;
-      flex-direction: column-reverse;
-      gap: 50px;
 
       &_group {
         gap: 8px;
       }
+    }
+
+    @include maxW(767px) {
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column-reverse;
+      gap: 50px;
     }
   }
 }
