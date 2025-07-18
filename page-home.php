@@ -68,7 +68,7 @@
                                         <h3>撮影スタジオ</h3>
                                         <p>高い防音性を備えた都心最大級のスタジオ群で快適な撮影環境をご提供します。</p>
                                     </div>
-                                    <div class="services_arrow sp-only">
+                                    <div class="services_arrow">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="31.734" height="6.855"
                                             viewBox="0 0 31.734 6.855">
                                             <g id="Component_55_5" data-name="Component 55 – 5"
@@ -96,7 +96,7 @@
                                         <h3>ポストプロダクション</h3>
                                         <p>オフライン、オンライン、カラーグレーディング、MAをワンストップ、高品質でご提供します。</p>
                                     </div>
-                                    <div class="services_arrow sp-only">
+                                    <div class="services_arrow">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="31.734" height="6.855"
                                             viewBox="0 0 31.734 6.855" style="overflow: initial;">
                                             <g id="Component_55_5" data-name="Component 55 – 5"
@@ -127,7 +127,7 @@
                                             拡げます。
                                         </p>
                                     </div>
-                                    <div class="services_arrow sp-only">
+                                    <div class="services_arrow">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="31.734" height="6.855"
                                             viewBox="0 0 31.734 6.855">
                                             <g id="Component_55_5" data-name="Component 55 – 5"
@@ -154,7 +154,7 @@
                                         <h3>オンライン送稿サービス</h3>
                                         <p>ポストプロダクションとしてのこれまでの経験を生かし、迅速で安心安全なサービスをご提供します。</p>
                                     </div>
-                                    <div class="services_arrow sp-only">
+                                    <div class="services_arrow">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="31.734" height="6.855"
                                             viewBox="0 0 31.734 6.855">
                                             <g id="Component_55_5" data-name="Component 55 – 5"
@@ -181,7 +181,7 @@
                                         <h3>ロケーションサポート</h3>
                                         <p>経験豊富なスタッフと多様な機材で、さまざまな撮影をサポートします。</p>
                                     </div>
-                                    <div class="services_arrow sp-only">
+                                    <div class="services_arrow">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="31.734" height="6.855"
                                             viewBox="0 0 31.734 6.855">
                                             <g id="Component_55_5" data-name="Component 55 – 5"
@@ -208,7 +208,7 @@
                                         <h3>TVCM字幕制作・データ変換</h3>
                                         <p>多種多様なデータ変換から「より伝わる」CM字幕まで、経験豊富な専任スタッフが対応します。</p>
                                     </div>
-                                    <div class="services_arrow sp-only">
+                                    <div class="services_arrow">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="31.734" height="6.855"
                                             viewBox="0 0 31.734 6.855" style="overflow: initial;">
                                             <g id="Component_55_5" data-name="Component 55 – 5"
@@ -235,7 +235,7 @@
                                         <h3>ライブ配信サポート</h3>
                                         <p>高品質な映像と音響でイベントやセミナーのライブ配信をサポートします。</p>
                                     </div>
-                                    <div class="services_arrow sp-only">
+                                    <div class="services_arrow">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="31.734" height="6.855"
                                             viewBox="0 0 31.734 6.855">
                                             <g id="Component_55_5" data-name="Component 55 – 5"

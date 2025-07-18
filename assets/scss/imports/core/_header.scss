@@ -7,7 +7,7 @@
     top: 0;
     z-index: 10;
     width: 100%;
-    padding: 0 50px;
+    padding: 0 min(2.5vw, 50px);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -43,8 +43,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 45px;
+    gap: min(3.294vw, 45px);
 
     span.line {
       display: block;
@@ -61,13 +60,13 @@
   &_group {
     display: flex;
     align-items: center;
-    gap: 35px;
+    gap: min(2.562vw, 35px);
 
     a {
       display: inline-block;
       position: relative;
       font-family: var(--neue-fonts);
-      font-size: 1.4rem;
+      font-size: min(1.1vw, 1.4rem);
       font-weight: 500;
       text-transform: uppercase;
 

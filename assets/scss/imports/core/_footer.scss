@@ -5,6 +5,10 @@
   &_container {
     padding: 100px 100px 50px;
 
+    @include maxW(1300px) {
+      padding: 100px 50px 50px;
+    }
+
     @include maxW {
       padding: 70px 35px 30px;
     }
@@ -33,7 +37,7 @@
       .group {
         display: flex;
         align-items: center;
-        gap: 35px;
+        gap: min(2.562vw, 35px);
 
         h3 {
           font-family: var(--neue-fonts);
@@ -90,7 +94,7 @@
   &_mega {
     margin-top: 23px;
     display: grid;
-    grid-template-columns: max(46.479%, 528px) 1fr;
+    grid-template-columns: 45% 1fr;
     gap: 10px;
 
     @include maxW(1023px) {

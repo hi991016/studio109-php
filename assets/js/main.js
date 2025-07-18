@@ -178,22 +178,31 @@ const initToggleShow = (selector) => {
 // ===== services =====
 let servicesSwiper = null;
 const initSwiperServices = () => {
-  if (isMobile.matches) {
+  if (window.matchMedia("(max-width: 767px)").matches) {
     servicesSwiper?.destroy(true, true);
     servicesSwiper = null;
   } else {
     servicesSwiper = new Swiper("[data-services-swiper]", {
-      slidesPerView: 3.68,
       initialSlide: 1,
       spaceBetween: 35,
-      centeredSlides: true,
       loop: true,
       speed: 1000,
-      allowTouchMove: false,
-      draggable: false,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          allowTouchMove: true,
+          draggable: true,
+        },
+        1025: {
+          centeredSlides: true,
+          slidesPerView: 3.68,
+          allowTouchMove: false,
+          draggable: false,
+        },
       },
     });
   }

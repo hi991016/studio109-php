@@ -206,7 +206,11 @@
       padding: 0 100px;
     }
 
-    @include maxW {
+    &_arrow {
+      display: none;
+    }
+
+    @include maxW() {
       &_container {
         padding: 70px 35px;
       }
@@ -214,8 +218,11 @@
       &_heading {
         padding: 0;
       }
+    }
 
+    @include maxW(767px) {
       &_arrow {
+        display: block;
         margin-top: 18px;
         padding-right: 20px;
         transition: transform 0.3s ease;
@@ -228,7 +235,6 @@
 
     &_swiper {
       margin-top: 70px;
-      width: 100%;
       position: relative;
       overflow: hidden;
 
@@ -284,8 +290,14 @@
         }
       }
 
-      @include maxW {
-        margin-top: 45px;
+      @include maxW() {
+        margin: 45px -35px 0;
+        padding: 0 35px;
+      }
+
+      @include maxW(767px) {
+        margin: 45px 0 0;
+        padding: 0;
 
         .swiper-wrapper {
           display: block;
@@ -434,7 +446,7 @@
 
         &:hover {
           opacity: 1;
-          border-color: rgba($color: #fff, $alpha: 0);;
+          border-color: rgba($color: #fff, $alpha: 0);
           background: rgba($color: #fff, $alpha: 0.34);
           color: rgba($color: #000, $alpha: 0.6);
         }
@@ -490,6 +502,12 @@
       }
     }
 
+    @include maxW(1300px) {
+      &_container {
+        padding: 100px 50px;
+      }
+    }
+
     @include maxW {
       &_container {
         padding: 70px 35px;
@@ -497,7 +515,6 @@
 
       &_list {
         margin-top: 45px;
-        grid-template-columns: repeat(1, 1fr);
         gap: 60px;
       }
 
@@ -551,6 +568,12 @@
             }
           }
         }
+      }
+    }
+
+    @include maxW(767px) {
+      &_list {
+        grid-template-columns: repeat(1, 1fr);
       }
     }
   }
