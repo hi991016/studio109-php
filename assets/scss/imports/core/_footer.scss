@@ -166,6 +166,7 @@
           width: fit-content;
           font-size: 1.2rem;
           line-height: 2.2;
+          font-feature-settings: "palt" 1;
         }
       }
     }
@@ -264,7 +265,7 @@
     justify-content: space-between;
     gap: 20px;
 
-    font-size: 1.1rem;
+    font-size: min(2.657vw, 1.1rem);
     line-height: 1.45;
 
     &_group {
@@ -275,19 +276,14 @@
     @include maxW {
       margin-top: 40px;
       padding-top: 40px;
-
-      align-items: flex-end;
+      align-items: flex-start;
       justify-content: flex-start;
       flex-direction: column-reverse;
       gap: 50px;
 
       &_group {
-        gap: 5px;
+        gap: 8px;
       }
-    }
-
-    @include maxW(767px) {
-      align-items: flex-start;
     }
   }
 }
